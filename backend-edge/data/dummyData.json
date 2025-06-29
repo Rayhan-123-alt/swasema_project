@@ -1,0 +1,16 @@
+[
+  {
+    "ph": 6.5,
+    "tds": 420,
+    "tempAir": 25.0,
+    "tempUdara": 27.3,
+    "humidity": 60
+  },
+  {
+    "ph": 7.0,
+    "tds": 500,
+    "tempAir": 26.5,
+    "tempUdara": 29.0,
+    "humidity": 58
+  }
+]
