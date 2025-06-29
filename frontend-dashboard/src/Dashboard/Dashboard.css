@@ -1,0 +1,129 @@
+.dashboard {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: #0a0a0a;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4ade80;
+}
+
+.timestamp {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+}
+
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sensor-card {
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #ffffff;
+}
+
+.sensor-card.active {
+  background-color: #14532d;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.sensor-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #a3e635;
+}
+
+.sensor-card p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #fef08a;
+}
+
+.status-text {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.status-fair {
+  color: #facc15;
+}
+
+.status-poor {
+  color: #f87171;
+}
+
+.panel {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.control-panel h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #4ade80;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.button-grid button {
+  background-color: #1e293b;
+  border: none;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-grid button:hover {
+  background-color: #4ade80;
+  color: #000;
+}
+
+.gauge-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  padding: 0 0.5rem;
+}
+
+.gauge-labels span {
+  flex: 1;
+  text-align: center;
+}
+
+.gauge-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
